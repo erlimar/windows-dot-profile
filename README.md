@@ -24,8 +24,11 @@ Então aqui compartilhamos uma maneira de fazer isso.
 
 Execute o Editor de Registros do Windows (`regedit.exe`).
 
-Nele você deve procurar pela chave:
+Nele você deve procurar pela chave (somente para o usuário corrente):
 `HKEY_CURRENT_USER\Software\Microsoft\Command Processor`
+
+Nele você deve procurar pela chave (para todos os usuários do computador):
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor`
 
 Então adicione um novo **Valor da Cadeia de Caracteres** chamado `AutoRun`, com
 o seguinte conteúdo:
